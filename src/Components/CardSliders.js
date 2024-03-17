@@ -32,7 +32,7 @@ const CardSlider = () => {
   return (
     <div className='carditems'>
       <Carousel responsive={responsive}>
-          <Card img={kep1} title={"Todo List"} text={"Javascript. Html. Css. Local Storage. Responsive. Theme Changer. "} url={"https://pinczesbalint977.github.io/todo.github.io/"}/>
+          <Card img={kep1} title={"Todo List"} text={"Javascript. Html. Css. Local Storage. Responsive. Theme Changer. "} url={"https://pinczesbalint977.github.io/todolist1/"}/>
           <Card img={kep2} title={"Dog Food Tips"} text={"React. UseState. UseEffect. React Scroll. Components. Svg. React Icons. Css. Responsive. "} url={"https://pinczesbalint977.github.io/dogfoodtips/"}/>
           <Card img={kep3} title={"Video Game List"} text={"Javascript. Html. Css. Keyframes. Animation. Responsive. Rest Api. Search Option. Svg. Bootstrap. ScrollTo."} url={"https://pinczesbalint977.github.io/videogames/"}/>
           <Card img={kep4} title={"Ticket Seller"} text={"Angular. Firebase. Crud. Authentication. Realtime Database. Bootstrap. Components. Responsive. Font Awsome. Css. Router. Search option."} url={"https://bootstrap-e48a6.web.app/dashboard"}/>
