@@ -1,38 +1,732 @@
-.App {
+
+*{
+
+  box-sizing: border-box;
+
+}
+
+body {
+    font-family:Verdana, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(18, 18, 18);
+    
+
+
+  }
+
+
+
+
+  
+ header {
+    position: fixed;
+    width: 100%;
+    background: rgb(29, 29, 29);
+    animation: navbaranimation 3s normal;
+    z-index: 10;
+
+  }
+
+  .hamburger{
+    color:azure ;
+    background: rgb(29, 29, 29);
+    display: none;
+    font-size: 30px;
+    padding: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .li :hover{
+
+    color: #2effff;
+    text-shadow: 0 0 5px cyan,0 0 12px cyan,0 0 15px cyan, 0 0 25px cyan,0 0 100px cyan;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+  }
+
+  
+  
+  .li a {
+    display: block;
+    color: rgb(150, 152, 152);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+  
+  .element{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  #Home{
+    
+    background-image: url(./Pic/kep1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    box-shadow: inset 5px 5px 200px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: azure;
+
+
+  }
+
+  #Home button{
+    text-decoration: none;
+    color: azure;
+    border: 1px solid azure;
+    background: none;
+    margin: 5px;
+    margin-right: 10px;
+    border-radius: 8px;
+    padding: 5px;
+    width: 80px;
+    cursor: pointer;
+    animation: myanimation 1.5s normal;
+  }
+
+  #Home button:hover{
+
+    color: #2effff;
+    border: 1px solid #2effff;
+    transition: 0.2s ease-in-out;
+    transform: rotate(-5deg) scale(1.1);
+    box-shadow:inset 0 0 20px cyan,0 0 50px cyan,0 0 10px cyan, 0 0 15px cyan,0 0 10px cyan;
+    
+  }
+
+
+
+  #About{
+    
+    padding-top: 20px;
+    background: rgb(18, 18, 18);
+    color: azure;
+
+  }
+
+  #Contact{
+
+    padding-top: 10px;
+    background: rgb(18, 18, 18);
+  }
+
+  #profile{
+
+    background: rgb(18, 18, 18);
+
+  }
+
+
+  #title{
+
+
+    position: relative;
+    left: 12%;
+    margin-top: 12%;
+
+
+  }
+
+  #title h1{
+
+    font-size: 120px;
+    margin: -5px;
+    margin-top: -5px;
+  }
+
+  #name{
+
+    font-size: 50px;
+    margin: 0;
+    animation: titleanimation 3s normal;
+
+  }
+
+  #work{
+
+    margin-top: 0;
+    letter-spacing: 5px;
+    font-size: 24px;
+    animation: titleanimation 1s normal;
+  }
+
+  #nametwo{
+
+    animation: titleanimation 2s normal;
+  }
+
+#contactbtn{
+
+
+  position: absolute;
+  bottom: 10px;
+  
+
+
+}
+
+
+  
+@keyframes myanimation{
+
+  0%{
+    
+    opacity: 0;
+    transform: translateY(100px);
+
+  }
+  50%{
+    opacity: 0.5;
+    transform: translateY(-50px);
+  }
+}
+
+#Home button:nth-child(1){
+
+animation-delay: 0.1s;
+}
+#Home button:nth-child(2){
+
+animation-delay: 0.2s;
+}
+
+#Home button:nth-child(3){
+
+animation-delay: 0.3s;
+}
+
+
+@keyframes titleanimation{
+
+ 0%{
+  opacity: 0;
+  transform: translateX(-1500px);
+ }
+}
+
+
+@keyframes navbaranimation{
+
+  0%{opacity: 0;}
+}
+
+
+
+
+
+
+#img{
+
+  width: 100%;
+  height: 45%;
+  border-radius: 8px;
+  
+
+}
+
+img:hover{
+
+  transition: 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+
+.cards{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: azure;
+  height: 900px;
+  width: 70%;
+
+  
+}
+
+
+
+.grid{
+
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: -130px;
+
+}
+
+
+
+.cards a{
+
+  text-decoration: none;
+  color: azure;
+  border: 1px solid azure;
+  background: none;
+  margin: 5px;
+  margin-right: 10px;
+  border-radius: 8px;
+  padding: 5px;
+  width: 80px;
+  cursor: pointer;
+  text-align: center;
+
+
+}
+
+
+.cards a:hover{
+
+  color: #2effff;
+  border: 1px solid #2effff;
+  transition: 0.2s ease-in-out;
+  transform: rotate(-5deg) scale(1.1);
+  box-shadow:inset 0 0 20px cyan,0 0 50px cyan,0 0 10px cyan, 0 0 15px cyan,0 0 10px cyan;
+
+}
+
+#aboutimg{
+
+  position: absolute;
+  right: 0;
+  height: 80%;
+  width: 50%;
+}
+
+#text h2{
+
+  width: 90px;
+}
+
+#text{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 600px;
+  z-index: 1;
+  margin-left: 15%;
+  margin-top: 8%;
+}
+
+#abouttext{
+
+  display: flex;
+}
+
+
+
+
+
+
+.element::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px; 
+  background: linear-gradient(to right, #2effff, #ff4d4d); 
+}
+
+
+#text h2 {
+  position: relative;
+}
+
+#text h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.5px; 
+  background: linear-gradient(to right, #2effff, #ff4d4d); 
+}
+
+#text h3 {
+  position: relative;
+}
+
+#text h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.5px; 
+  background: linear-gradient(to right, #2effff, #ff4d4d); 
+}
+
+
+
+
+.icon{
+
+font-size: 50px;
+margin-right: 8px;
+z-index: 1;
+}
+
+
+.icon:hover{
+
+  color: #2effff;
+  transition: 1s ease-in-out;
+  
+  
+}
+
+#contactdiv{
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  
+
+}
+
+#contactdiv {
+  width: 80%;
+  margin: 0 auto; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ form{
+  
+   margin-top: 8%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 90%;
+ }
+ 
+
+
+.init{
+
+  margin-bottom: 20px;
+  width: 600px;
+  padding: 10px;
+  border-radius: 8px;
+  border:solid 1px azure;
+  background: none;
+  color: azure;
+  font-size: 20px;
+
+}
+
+.init:hover{
+
+  border:solid 1px #2effff;
+}
+
+.init:focus{
+
+border-color: #2effff;
+outline: none;
+box-shadow:inset 0 0 20px cyan,0 0 50px cyan,0 0 10px cyan, 0 0 15px cyan,0 0 10px cyan;
+transform: scale(1.1);
+transition: ease-in-out 0.5s;
+}
+
+
+#btn{
+
+  text-decoration: none;
+  color: azure;
+  border: 1px solid azure;
+  background: none;
+  margin: 5px;
+  margin-right: 10px;
+  border-radius: 8px;
+  padding: 5px;
+  width: 90px;
+  cursor: pointer;
+  text-align: center;
+  padding: 8px;
+  
+  
+
+}
+
+
+#btn:hover{
+
+  color: #2effff;
+  border: 1px solid #2effff;
+  transition: 0.2s ease-in-out;
+  transform: rotate(-5deg) scale(1.1);
+  box-shadow:inset 0 0 20px cyan,0 0 50px cyan,0 0 10px cyan, 0 0 15px cyan,0 0 10px cyan;
+  
+
+}
+
+
+footer{
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: azure;
+}
+
+
+
+
+@media screen and (max-width: 640px){
+
+#contactdiv{
+
+ width: 100%;
+ justify-content: center;
+ align-items: center;
+}
+
+
+form{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.init{
+
+  width: 80%;
+
+}
+
+@keyframes myanimation{
+
+  0%{
+    
+    opacity: 0;
+    transform: translateY(100px);
+
+  }
+  50%{
+    opacity: 0.5;
+    transform: translateY(-150px);
+  }
+}
+  
+  
+}
+
+
+
+
+@media screen and (max-width: 992px){
+#title{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#aboutimg{
+
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80%;
+  width: 90%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+}
+
+@media screen and (max-width: 850px){
+
+
+
+
+
+  #text{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 0;
+    width: 90%;
+    word-wrap: break-word;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+
+
+@media screen and (max-width: 992px){
+  #title{
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    text-align: center;
   }
+  
+  #aboutimg{
+  
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    width: 90%;
+  }
+  
+  }
+
+  @media screen and (max-width: 600px){
+  
+    #aboutimg{
+  
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 80%;
+      width: 160%;
+    }
+  
+    
+    }
+
+
+
+
+@media screen and (max-width: 1101px){
+
+  #aboutimg{
+
+    position: absolute;
+    top: 120%;
+    transform: translate(-50%, -150%);
+  }
+
+  #text{
+
+    opacity: 0.5;
+  }
+
+
+  
+  }
+
+
+@media screen and (max-width: 600px){
+
+  .cards{
+
+    height: 600px;
+  }
+  
+  .grid{
+    margin-top: 0px;
+  }
+
+  #work{
+
+    font-size: 18px;
+  }
+
 }
+
+
+
+
+
+@media screen and (max-width: 1240px){
+
+  .hamburger{
+
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-menu{
+
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    transition: 0.3s;
+    z-index: -10;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+  }
+
+  .nav-menu.nav-active{
+
+    left: 0;
+  }
+
+  .nav-menu a{
+
+    font-size: 32px;
+  }
+
+  .nav-menu li{
+
+    padding: 1rem 0;
+  }
+
+
+
+  .app{
+
+    width: 100%;
+  }
+
+
+
+
+  #title h1{
+
+    font-size: 50px;
+  }
+
+
+
+}
+
+
+
+
