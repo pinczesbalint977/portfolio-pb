@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolio-pb/static/css/main.fb42f135.css",
+    "main.js": "/portfolio-pb/static/js/main.fb9d5172.js",
+    "static/media/kep1.jpg": "/portfolio-pb/static/media/kep1.19d5f0be5534c88fc5e8.jpg",
+    "static/media/4.jpg": "/portfolio-pb/static/media/4.0e1f93b352b4e6d3b4ec.jpg",
+    "static/media/5.jpg": "/portfolio-pb/static/media/5.b8650937fdfe5e697c8d.jpg",
+    "static/media/2.jpg": "/portfolio-pb/static/media/2.0f7d961442e0c3a5a9cc.jpg",
+    "static/media/3.jpg": "/portfolio-pb/static/media/3.f50960b24314ca3bc705.jpg",
+    "static/media/pb1.jpg": "/portfolio-pb/static/media/pb1.a6776fb6858fcaa19f8c.jpg",
+    "static/media/revicons.eot": "/portfolio-pb/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/portfolio-pb/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/portfolio-pb/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/portfolio-pb/index.html",
+    "main.fb42f135.css.map": "/portfolio-pb/static/css/main.fb42f135.css.map",
+    "main.fb9d5172.js.map": "/portfolio-pb/static/js/main.fb9d5172.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb42f135.css",
+    "static/js/main.fb9d5172.js"
+  ]
+}
